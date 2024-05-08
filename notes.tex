@@ -1,0 +1,57 @@
+\documentclass[11pt]{amsart}
+
+\usepackage{macros,amsaddr,physics}
+
+\addbibresource{refs.bib}
+
+\renewcommand{\op}{\operatorname}
+\newcommand{\RS}{\cR \cS}
+\newcommand{\penrose}{\slashed{P}}
+\renewcommand{\PV}{\mathrm{PV}}
+\renewcommand{\div}{\del_{\Omega}}
+
+%\linespread{1.2} %for editing
+%\usepackage{mathpazo}
+
+\begin{document}
+
+\title{Notes about BFSS}
+\maketitle
+
+\section{$D0$ brane backreaction}
+
+In the $SU(4)$ invariant twist of type IIA supergravity there is a field 
+\beqn
+\alpha \in \Omega^1(\R^2) \otimes \PV^{3,0}(\C^4)  ,
+\eeqn
+which is required to satisfy $(\id \otimes \div) \alpha = 0$.
+Locally, on $\C^4 \times \R^2$, we can always always solve this constraint.
+
+To first order, the coupling to twisted $D0$ branes supported along
+\beqn
+\R_t \times 0 \times 0 \subset \R_t \times \R_x \times \C^4 
+\eeqn
+is
+\beqn
+\int_{\R} (\div^{-1} \alpha) \vee \Omega . 
+\eeqn
+The field $\alpha$ appears in the kinetic term of the non-local Kodaira--Spencer action as
+\beqn
+\int_{\R^2 \times \C^4} \beta_0 \d \div^{-1} \alpha + \int_{\R^2 \times \C^4} \beta_1 \dbar \div^{-1} \alpha 
+\eeqn
+where 
+\begin{align*}
+\beta_0 & \in \Omega^0(\R^2) \otimes \PV^{0,4}(\C^4) \\
+\beta_1 & \in \Omega^1(\R^2) \otimes \PV^{0,3}(\C^4) .
+\end{align*}
+This leads to the equation
+\beqn
+(\d + \dbar) \beta = \delta_{\R \subset \R^2 \times \C^4}
+\eeqn
+where $\beta = \beta_0 + \beta_1$.
+Explicit solution is
+\beqn
+\beta_0 = \frac{x \, \d^4 \zbar}{(x^2 + |z|^2)^{9/2}} , \quad
+\beta_1 = - \eps_{ijkl} \frac{\zbar_i \, \d x \d \zbar_{j} \d \zbar_k \d \zbar_l}{(x^2 + |z|^2)^{9/2}} .
+\eeqn
+\end{document}
