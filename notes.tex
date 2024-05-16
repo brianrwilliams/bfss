@@ -32,7 +32,7 @@ To first order, the coupling to twisted $D0$ branes supported along
 \R_t \times 0 \times 0 \subset \R_t \times \R_x \times \C^4 
 \eeqn
 is
-\beqn
+\beqn \label{d0coupling}
 \int_{\R} (\div^{-1} \alpha) \vee \Omega . 
 \eeqn
 The field $\alpha$ appears in the kinetic term of the non-local Kodaira--Spencer action as
@@ -54,4 +54,29 @@ Explicit solution is
 \beta_0 = \frac{x \, \d^4 \zbar}{(x^2 + |z|^2)^{9/2}} , \quad
 \beta_1 = - \eps_{ijkl} \frac{\zbar_i \, \d x \, \d \zbar_{j} \,\d \zbar_k \, \d \zbar_l}{(x^2 + |z|^2)^{9/2}} .
 \eeqn
+
+\section{Eleven-dimensional uplift}
+The $SU(4)$-invariant twist of type IIA supergravity on $\R\times \R \times \C^4$ arises from the minimal twist of eleven-dimensional supergravity on $\R \times \C_w \times \C^4$ from restricting to those field configurations that are invariant under shifting the imaginary part of $w$.
+
+Explicitly, there is a map from the fields of 
+type IIA supergravity on 
+\beqn
+\R_t \times (\R_x\times \C^4) \setminus 0
+\eeqn
+to the fields of eleven-dimensional supergravity on 
+\beqn 
+\C_w \times (\R_x \times \C^4) \setminus 0
+\eeqn
+given by pulling back along the map 
+\beqn
+p: \C_w \times (\R_x \times \C^4)\setminus 0 \to \R_t \times (\R_x \times \C^4)\setminus 0, \quad
+w = t + iy \mapsto t
+\eeqn
+
+By an eleven-dimensional uplift, we mean the image of a type IIA field configuration under $p^*$. Since $\beta_0$ and $\beta_1$ do not have any $t$-dependence, they lift to field configurations with identical expressions. The deformation-theoretic meaning of these fields is nebulous.
+
+We can also ask about a lift of the leading order coupling to D0 branes. That is, we ask for a possibly non-local coupling in eleven-dimensions whose pullback along $p^*$ recovers \ref{d0coupling}. 
+
+The coupling \ref{d0coupling} is nonzero on those $\alpha$ fields of the form $\alpha = f(t) dt \wedge \eta$ where $\eta\in \PV^{3,0} (\C^4)$. Potential couplings in eleven-dimensions therefore must be nonzero on those fields in $\Omega^\bullet (\R_x) \otimes \PV^{1,\bullet}(\C_w) \otimes \PV^{0,\bullet}(\C^4)$ of the form $f(w, \bar{w}) g(z, \bar{z}) d\bar{w}\partial_w$ Note that this looks like a Beltrami differential along $\C_w$. 
+
 \end{document}
